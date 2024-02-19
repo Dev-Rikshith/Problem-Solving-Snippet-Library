@@ -1,0 +1,21 @@
+
+
+#Static Code Matches 
+#(Java)
+matches:
+  - trigger: ":config"
+    replace: "Config Success"
+
+   - trigger: ":main"
+    replace: "public class Main{\npublic static void main(String args[]){\n}\n"
+
+  - trigger: ":in"
+    replace: "public class Main{\npublic static void main(String args[]){\nScanner sc = new Scanner(System.in);\nsc.close();\n}\n}"
+
+  - trigger: ":io"
+    replace: "BufferedReader br = new BufferedReader(new InputStreamReader(System.in));\nBufferedWriter bw = new BufferedWriter(new OutputStreamWriter(System.out));"
+
+#Static Misc Matches
+matches: 
+  -trigger: ":sign"
+  replace: "your-name" #Edit this name for you to sign the code
